@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 14:54:43 by etornay-          #+#    #+#             */
-/*   Updated: 2023/10/25 16:26:43 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/10/26 16:03:21 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct s_game
 	int				y;
 	int				x;
 	int				i;
+	int				z;
 	int				counter;
 	t_position		player;
 	t_position		exit;
@@ -61,10 +62,12 @@ typedef struct s_game
 void	init_struct(t_game *game);
 int		read_map(char **argv, t_game *game);
 void	free_all(t_game *game);
-int		check_map(char *aber);
+int		check_extension(char *aber);
 int		lines_and_walls(t_game *game);
 int		other_walls(t_game *game);
 int		things(t_game *game);
 void	flood_fill(t_game *game, t_position	player, t_position size);
 int		valid_way(t_game *game);
+int		create_image(t_game *g);
+void	init_game(t_game *g);
 #endif

@@ -6,13 +6,13 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:34:02 by etornay-          #+#    #+#             */
-/*   Updated: 2023/10/25 12:43:24 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:34:47 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
-int	check_map(char *aber)
+int	check_extension(char *aber)
 {
 	int	i;
 
@@ -43,7 +43,7 @@ int	lines_and_walls(t_game *game)
 			if (game->map[0][game->i] != '1'
 				|| game->map[game->y - 1][game->i] != '1')
 			{
-				return (ft_printf("Error\nDuro contra el muro\n"), EXIT_FAILURE);
+				return (ft_printf("Error\nContra el muro\n"), EXIT_FAILURE);
 			}
 			game->i++;
 		}
@@ -60,7 +60,7 @@ int	other_walls(t_game *game)
 		if (game->map[game->i][0] != '1'
 			|| game->map[game->i][game->x - 1] != '1')
 		{
-			return (ft_printf("Error\nDuro contra el muro\n"), EXIT_FAILURE);
+			return (ft_printf("Error\nContra el muro\n"), EXIT_FAILURE);
 		}
 		game->i++;
 	}
