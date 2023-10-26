@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 14:54:43 by etornay-          #+#    #+#             */
-/*   Updated: 2023/10/25 15:29:15 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/10/25 16:26:43 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <fcntl.h>
 # include "./Libft/libft.h"
 # include "./MLX42/include/MLX42/MLX42.h"
-
+/* gcc -Wall -Werror -Wextra Libft/libft.a MLX42/libmlx42.a -Iinclude -lglfw -L '/Users/etornay-/.brew/opt/glfw/lib/' *.c -o so_long */
 typedef struct s_position
 {
 	int	x;
@@ -45,16 +45,17 @@ typedef struct s_game
 	mlx_image_t		*i_suelo;
 	mlx_texture_t	*t_muro;
 	mlx_image_t		*i_muro;
-	mlx_texture_t	*t_player1;
-	mlx_image_t		*i_player1;
-	mlx_texture_t	*t_player2;
-	mlx_image_t		*i_player2;
-	mlx_texture_t	*t_open;
-	mlx_image_t		*i_open;
-	mlx_texture_t	*t_close;
-	mlx_image_t		*i_close;
-	mlx_texture_t	*t_llave;
-	mlx_image_t		*i_llave;
+	mlx_texture_t	*t_p1;
+	mlx_image_t		*i_p1;
+	mlx_texture_t	*t_p2;
+	mlx_image_t		*i_p2;
+	mlx_texture_t	*t_e2;
+	mlx_image_t		*i_e2;
+	mlx_texture_t	*t_e1;
+	mlx_image_t		*i_e1;
+	mlx_texture_t	*t_c;
+	mlx_image_t		*i_c;
+	mlx_t			*mlx;
 }	t_game;
 
 void	init_struct(t_game *game);
