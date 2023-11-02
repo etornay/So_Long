@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:02:40 by etornay-          #+#    #+#             */
-/*   Updated: 2023/10/25 14:40:12 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/02 14:45:49 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,24 @@ void	free_all(t_game *game)
 		free(game->map_copy);
 	}
 	free(game);
+}
+
+void	free_maps(t_game *game)
+{
+	game->i = 0;
+	if (game->map != NULL)
+	{
+		while (game->map[game->i] != NULL)
+			free(game->map[game->i++]);
+		free(game->map);
+	}
+	game->i = 0;
+	if (game->map_copy != NULL)
+	{
+		while (game->map_copy[game->i] != NULL)
+			free(game->map_copy[game->i++]);
+		free(game->map_copy);
+	}
 }
 
 void	flood_fill(t_game *game, t_position	player, t_position size)
@@ -58,5 +76,14 @@ int	valid_way(t_game *game)
 	if (game->c_collect_copy != game->c_collect
 		|| game->c_exit != game->c_exit_copy)
 		return (ft_printf("Error\nMe he desviao\n"), EXIT_FAILURE);
+	game->c_collect = 0;
 	return (EXIT_SUCCESS);
+}
+
+void	close_game(void *p)
+{
+	t_game	*g;
+
+	g = p;
+	mlx_close_window(g->mlx);
 }
