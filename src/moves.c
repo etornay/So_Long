@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 15:21:09 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/02 14:34:44 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/03 16:13:31 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ static void	move_to_exit(t_game *g, int x, int y, mlx_image_t *lime)
 	g->player.x = x;
 	g->player.y = y;
 	mlx_image_to_window(g->mlx, g->i_s, g->player.x * 50, g->player.y * 50);
+	mlx_image_to_window(g->mlx, g->i_e1, g->player.x * 50, g->player.y * 50);
 	mlx_image_to_window(g->mlx, lime, g->player.x * 50, g->player.y * 50);
 	g->moves++;
 	ft_printf("Nº Movimientos: %d\n", g->moves);

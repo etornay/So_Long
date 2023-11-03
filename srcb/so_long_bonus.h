@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 14:54:43 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/02 15:07:24 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/03 15:44:29 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#ifndef SO_LONG_BONUS_H
+# define SO_LONG_BONUS_H
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
 # include <stdarg.h>
 # include <fcntl.h>
-# include "./Libft/libft.h"
-# include "./MLX42/include/MLX42/MLX42.h"
+# include "../Libft/libft.h"
+# include "../MLX42/include/MLX42/MLX42.h"
+
 typedef struct s_position
 {
 	int	x;
@@ -34,6 +35,7 @@ typedef struct s_game
 	int				z;
 	int				counter;
 	int				moves;
+	int				enemy;
 	t_position		player;
 	t_position		exit;
 	int				c_player;
@@ -60,6 +62,10 @@ typedef struct s_game
 	mlx_image_t		*i_e1;
 	mlx_texture_t	*t_c;
 	mlx_image_t		*i_c;
+	mlx_texture_t	*t_n2;
+	mlx_image_t		*i_n2;
+	mlx_texture_t	*t_n1;
+	mlx_image_t		*i_n1;
 	mlx_t			*mlx;
 }	t_game;
 
@@ -76,4 +82,7 @@ int		create_image(t_game *g);
 void	init_game(t_game *g);
 void	close_game(void *p);
 void	keyhook(mlx_key_data_t keydata, void *p);
+void	screen_counter(t_game *game);
+void	move_enemy(t_game *game);
+void	move_enemy2(t_game *game);
 #endif
