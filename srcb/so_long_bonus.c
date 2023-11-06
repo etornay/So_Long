@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:57:52 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/03 16:17:29 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/06 16:33:00 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	main(int argc, char **argv)
 	if (!game)
 		return (EXIT_FAILURE);
 	if (argc != 2)
-		return (ft_printf("Error\nIntroduzca mapa, pls\n"), EXIT_FAILURE);
+		return (ft_printf("Error\nIntroduzca mapa\n"), EXIT_FAILURE);
 	init_struct(game);
 	if (check_map(game, argv) == EXIT_FAILURE)
 		return (EXIT_FAILURE);
