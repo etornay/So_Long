@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:15:45 by etornay-          #+#    #+#             */
-/*   Updated: 2023/10/25 14:54:24 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/06 12:36:56 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	read_map(char **argv, t_game *game)
 
 	fd = open(argv[1], O_RDONLY);
 	if (fd < 0)
-		return (EXIT_FAILURE);
+		return (ft_printf("Error\nMapa no encontrado\n"), EXIT_FAILURE);
 	line = get_next_line(fd);
 	if (!line)
 		return (EXIT_FAILURE);

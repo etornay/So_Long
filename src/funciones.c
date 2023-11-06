@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:02:40 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/03 14:56:09 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/06 12:36:18 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	valid_way(t_game *game)
 	flood_fill(game, game->player, (t_position){game->x, game->y});
 	if (game->c_collect_copy != game->c_collect
 		|| game->c_exit != game->c_exit_copy)
-		return (ft_printf("Error\nNo se pué\n"), EXIT_FAILURE);
+		return (ft_printf("Error\nCamino no válido\n"), EXIT_FAILURE);
 	game->c_collect = 0;
 	return (EXIT_SUCCESS);
 }

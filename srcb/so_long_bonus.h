@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 14:54:43 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/03 15:44:29 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/06 13:56:15 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ typedef struct s_game
 	int				y;
 	int				x;
 	int				i;
+	int				j;
 	int				z;
-	int				counter;
 	int				moves;
 	int				enemy;
 	t_position		player;

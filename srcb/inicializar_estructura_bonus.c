@@ -6,7 +6,7 @@
 /*   By: etornay- <etornay-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:42:58 by etornay-          #+#    #+#             */
-/*   Updated: 2023/11/03 15:30:15 by etornay-         ###   ########.fr       */
+/*   Updated: 2023/11/06 13:56:54 by etornay-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	init_struct(t_game *game)
 	game->x = 0;
 	game->i = 0;
 	game->z = -1;
-	game->counter = 0;
+	game->j = 0;
 	game->c_player = 0;
 	game->c_exit = 0;
 	game->c_collect = 0;
