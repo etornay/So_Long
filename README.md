@@ -1,4 +1,4 @@
-Tu proyecto debe cumplir con las siguientes normas:
+_**Tu proyecto debe cumplir con las siguientes normas:**_
 
 • Debes usar la miniLibX. Ya sea la versión disponible en el sistema operativo, o
 su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mismas normas que con tu libft, descritas en la parte de Instrucciones generales.
@@ -29,7 +29,7 @@ ir a la derecha.
 • Aunque los ejemplos dados se refieren a una temática de delfín, puedes crear el
 mundo que quieras.
 
-</h1>2. Gestión de gráficos</h1>
+<h1>2. Gestión de gráficos</h1>
 
 • El programa mostrará la imagen en una ventana.
 
@@ -42,7 +42,7 @@ limpiamente.
 
 • El uso de images de la miniLibX es obligatorio
 
-</h1>3. Mapa</h1>
+<h1>3. Mapa</h1>
 
 • El mapa estará construido de 3 componentes: paredes, objetos y espacio abierto.
 
