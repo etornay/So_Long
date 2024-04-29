@@ -39,7 +39,7 @@ mundo que quieras.
 • Hacer clic en la cruz roja de la ventana debe cerrar la ventana y terminar el programa
 limpiamente.
 
-• El uso de images de la miniLibX es obligatorio
+• El uso de images de la MLX es obligatorio
 
 <h1>3. Mapa</h1>
 
