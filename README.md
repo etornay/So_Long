@@ -8,7 +8,7 @@ su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mis
 • Tu programa debe aceptar como primer argumento un archivo con la descripción
 del mapa de extensión .ber.
 
-<h1>_**1. Juego**_</h1>
+<h1>1. Juego</h1>
 
 • El objetivo del jugador es recolectar todos los objetos presentes en el mapa y salir
 eligiendo la ruta más corta posible.
@@ -29,7 +29,7 @@ ir a la derecha.
 • Aunque los ejemplos dados se refieren a una temática de delfín, puedes crear el
 mundo que quieras.
 
-_**2. Gestión de gráficos**_
+</h1>2. Gestión de gráficos</h1>
 
 • El programa mostrará la imagen en una ventana.
 
@@ -42,7 +42,7 @@ limpiamente.
 
 • El uso de images de la miniLibX es obligatorio
 
-_**3. Mapa**_
+</h1>3. Mapa</h1>
 
 • El mapa estará construido de 3 componentes: paredes, objetos y espacio abierto.
 
@@ -90,7 +90,7 @@ deberá devolver un error.
 programa debe terminar correctamente y devolver “Error\n” seguido de un mensaje
 explícito de tu elección.
 
-_**4. Parte extra**_
+<h1>4. Parte extra</h1>
 
 
 • Haces que el jugador pierda cuando toque una patrulla de enemigos
