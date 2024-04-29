@@ -8,7 +8,7 @@ su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mis
 • Tu programa debe aceptar como primer argumento un archivo con la descripción
 del mapa de extensión .ber.
 
-**1. Juego**
+_**1. Juego**_
 
 • El objetivo del jugador es recolectar todos los objetos presentes en el mapa y salir
 eligiendo la ruta más corta posible.
@@ -29,7 +29,7 @@ ir a la derecha.
 • Aunque los ejemplos dados se refieren a una temática de delfín, puedes crear el
 mundo que quieras.
 
-2. Gestión de gráficos
+_**2. Gestión de gráficos**_
 
 • El programa mostrará la imagen en una ventana.
 
@@ -42,7 +42,7 @@ limpiamente.
 
 • El uso de images de la miniLibX es obligatorio
 
-3. Mapa
+_**3. Mapa**_
 
 • El mapa estará construido de 3 componentes: paredes, objetos y espacio abierto.
 
@@ -51,15 +51,15 @@ muro, C para un coleccionable, E para salir del mapa y P para la posición inici
 del jugador.
 Este es un ejemplo simple de un mapa válido:
 
-1111111111111
+**1111111111111**
 
-10010000000C1
+**10010000000C1**
 
-1000011111001
+**1000011111001**
 
-1P0011E000001
+**1P0011E000001**
 
-1111111111111
+**1111111111111**
 
 • El mapa debe tener una salida, al menos un objeto y una posición inicial.
 
@@ -74,23 +74,23 @@ deberá devolver un error.
 
 • Otro ejemplo minimalista de un mapa .ber:
 
-1111111111111111111111111111111111
+**1111111111111111111111111111111111**
 
-1E0000000000000C00000C000000000001
+**1E0000000000000C00000C000000000001**
 
-1010010100100000101001000000010101
+**1010010100100000101001000000010101**
 
-1010010010101010001001000000010101
+**1010010010101010001001000000010101**
 
-1P0000000C00C0000000000000000000C1
+**1P0000000C00C0000000000000000000C1**
 
-1111111111111111111111111111111111
+**1111111111111111111111111111111111**
 
 • En caso de fallos de configuración de cualquier tipo encontrados en el archivo, el
 programa debe terminar correctamente y devolver “Error\n” seguido de un mensaje
 explícito de tu elección.
 
-4. Parte extra
+_**4. Parte extra**_
 
 
 • Haces que el jugador pierda cuando toque una patrulla de enemigos
