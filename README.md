@@ -8,7 +8,7 @@ su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mis
 • Tu programa debe aceptar como primer argumento un archivo con la descripción
 del mapa de extensión .ber.
 
-_**1. Juego**_
+<h1>_**1. Juego**_</h1>
 
 • El objetivo del jugador es recolectar todos los objetos presentes en el mapa y salir
 eligiendo la ruta más corta posible.
