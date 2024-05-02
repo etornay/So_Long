@@ -1,6 +1,6 @@
 _**Tu proyecto debe cumplir con las siguientes normas:**_
 
-• Debes usar la MLX. Ya sea la versión disponible en el sistema operativo, o su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mismas normas que con tu libft, descritas en la parte de Instrucciones generales.
+• Debes usar la MLX. Ya sea la versión disponible en el sistema operativo, o su fuente. Si eliges trabajar con la fuente, deberás compilar siguiendo las mismas normas que con tu libft.
 
 • Debes entregar un Makefile que compile con tus archivos fuente.
 
